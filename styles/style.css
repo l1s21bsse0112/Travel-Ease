@@ -73,7 +73,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgb(0 0 0 / 50%);
 }
 
 .hero-content {
@@ -138,14 +138,14 @@ img {
 .review-card {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .dest-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgb(0 0 0 / 20%);
 }
 
 .dest-card img {
@@ -165,7 +165,7 @@ img {
 
 .review-card blockquote {
   font-style: italic;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1rem;
   border-left: 4px solid #007bff;
   padding-left: 1rem;
 }
@@ -184,23 +184,27 @@ footer {
 .dest-category {
   margin-bottom: 3rem;
 }
+
 .dest-category h2 {
   border-bottom: 2px solid #007bff;
   display: inline-block;
   padding-bottom: 0.5rem;
   margin-bottom: 2rem;
 }
+
 .dest-grid-full {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
+
 .dest-card-full {
   background: #fff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
 }
+
 .dest-card-full p {
   margin: 0.5rem 0;
 }
@@ -208,6 +212,7 @@ footer {
 .download-links {
   margin: 2rem 0;
 }
+
 .download-btn {
   display: inline-block;
   background: #28a745;
@@ -217,12 +222,15 @@ footer {
   margin: 5px;
   transition: background-color 0.3s;
 }
+
 .download-btn:hover {
   background: #218838;
 }
+
 .faq h4 {
   margin-top: 1.5rem;
 }
+
 .faq p {
   margin-top: 0.5rem;
   padding-left: 1rem;
@@ -234,21 +242,25 @@ footer {
   background: #fff;
   margin-bottom: 2rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
   overflow: hidden;
 }
+
 .story-card img {
   width: 300px;
   object-fit: cover;
 }
+
 .story-content {
   padding: 1.5rem;
 }
+
 .story-meta {
   font-size: 0.9rem;
   color: #666;
   margin-bottom: 1rem;
 }
+
 .read-more {
   font-weight: bold;
 }
@@ -258,24 +270,29 @@ footer {
   flex-wrap: wrap;
   gap: 2rem;
 }
+
 .contact-info,
 .contact-form-container {
   flex: 1;
   min-width: 320px;
 }
+
 .map-image {
   width: 100%;
   border-radius: 8px;
   margin-top: 1rem;
   border: 1px solid #ddd;
 }
+
 .contact-form .form-group {
   margin-bottom: 1rem;
 }
+
 .contact-form label {
   display: block;
   margin-bottom: 5px;
 }
+
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -283,45 +300,55 @@ footer {
   border-radius: 5px;
   border: 1px solid #ccc;
 }
+
 .error-message {
   color: #dc3545;
   font-size: 0.875em;
   display: none;
 }
+
 .form-group.error .error-message {
   display: block;
 }
+
 .form-group.error input,
 .form-group.error textarea {
   border-color: #dc3545;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-links {
     flex-direction: column;
     width: 100%;
     display: none;
   }
+
   .nav-links li {
     padding: 0.5rem 0;
     text-align: center;
   }
+
   .hero h1 {
     font-size: 2.5rem;
   }
+
   .hero p {
     font-size: 1.2rem;
   }
+
   .dest-grid-full {
     grid-template-columns: 1fr;
   }
+
   .story-card {
     flex-direction: column;
   }
+
   .story-card img {
     width: 100%;
     height: 200px;
