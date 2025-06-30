@@ -1,0 +1,28 @@
+name: "Development CI: Linting"
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+    name: "Lint HTML & CSS"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout Code"
+        uses: actions/checkout@v3
+
+      - name: "Setup Node.js"
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: "Install Dependencies"
+        run: npm install stylelint stylelint-config-standard htmlhint
+
+      - name: "Lint CSS"
+        run: npx stylelint "**/*.css"
+
+      - name: "Lint HTML"
+        run: npx htmlhint "**/*.html"
