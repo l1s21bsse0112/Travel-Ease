@@ -1,7 +1,11 @@
 {
   "name": "travel-ease",
   "version": "1.0.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.10.1",
+    "stylelint-config-standard": "^34.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
